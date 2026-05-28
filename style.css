@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: #333;
+}
+
+#inputArea {
+  margin-bottom: 20px;
+}
+
+#todoInput {
+  width: 300px;
+  padding: 6px;
+  font-size: 16px;
+}
+
+#addBtn {
+  padding: 6px 12px;
+  font-size: 16px;
+  margin-left: 6px;
+}
+
+#todoList {
+  margin-top: 10px;
+}
+
+.todo-item {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 500px;
+}
+
+/* classList로 완료 스타일 제어 */
+.todo-item.done .todo-text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.todo-text {
+  flex: 1;
+  font-size: 16px;
+}
+
+.edit-input {
+  flex: 1;
+  font-size: 16px;
+  padding: 2px 6px;
+  display: none;
+}
+
+button {
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+#emptyMsg {
+  color: gray;
+  display: none;
+}

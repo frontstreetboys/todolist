@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>ToDo List</h1>
+
+  <!-- 할 일 입력 영역 -->
+  <div id="inputArea">
+    <!-- onkeydown 이벤트: Enter 키 입력 시 addTodo() 호출 -->
+    <input
+      type="text"
+      id="todoInput"
+      placeholder="할 일을 입력하세요"
+      onkeydown="handleKeyDown(event)"
+    />
+    <!-- onclick 이벤트: 버튼 클릭 시 addTodo() 호출 -->
+    <button id="addBtn" onclick="addTodo()">추가</button>
+  </div>
+
+  <p>총 <span id="totalCount">0</span>개 &nbsp; 완료 <span id="doneCount">0</span>개</p>
+
+  <!-- ② 할 일 목록이 렌더링될 영역 -->
+  <div id="todoList"></div>
+  <p id="emptyMsg">할 일이 없습니다🤔</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
