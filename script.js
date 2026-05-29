@@ -10,6 +10,10 @@ function saveTodos() {
 
 // Enter 키 입력 감지 (onkeydown 이벤트)
 function handleKeyDown(event) {
+  if (event.isComposing) {
+    return; 
+  }
+  
   if (event.key === 'Enter') {
     addTodo();
   }
